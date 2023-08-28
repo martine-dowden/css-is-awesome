@@ -1,0 +1,29 @@
+.card {
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+  border-radius: 4px;
+  container-type: inline-size;
+  margin-bottom: 20px;
+  
+  & header {
+    background: rgb(255, 247, 205);
+    padding: 15px;
+    border-radius: 4px 4px 0 0;
+  }
+  & .body {
+    padding: 0 15px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  & footer {
+    padding: 15px;
+  }
+  
+  @container (width >= 550px) {
+    & .body {
+      gap: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

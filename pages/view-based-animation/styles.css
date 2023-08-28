@@ -1,0 +1,12 @@
+@keyframes background-scroll {
+  from { background: palegoldenrod; }
+  to { background: paleturquoise; }
+}
+
+section {
+  height: 100px;
+  margin-bottom: 1rem;
+  animation: background-scroll auto linear;
+  animation-timeline: view(block);
+}
+

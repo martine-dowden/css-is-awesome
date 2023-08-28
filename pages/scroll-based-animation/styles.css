@@ -1,0 +1,38 @@
+p { line-height: 1.75; }
+
+@keyframes grow-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes background-scroll {
+  0% { background: #ffecec; }
+  10% { background: #fffaec; }
+  20% { background: #fcffec; }
+  30% { background: #edffec; }
+  40% { background: #ecfffb; }
+  50% { background: #eeecff; }
+  60% { background: #f8ecff; }
+  70% { background: #eeecff; }
+  80% { background: #ffecfa; }
+  90% { background: #ffecf5; }
+  100% { background: #ffecec; }
+}
+
+#progress {
+  position: fixed;
+  left: 10px;
+  right: 10px; 
+  top: 2px; 
+  height: 10px;
+  background: #7e8ed7;
+
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: scroll();
+}
+
+body {
+  animation: background-scroll auto linear;
+  animation-timeline: scroll();
+}

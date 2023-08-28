@@ -1,0 +1,17 @@
+{
+  "name": "css-is-awesome",
+  "version": "1.0.0",
+  "description": "Code samples for Martine Dowden's CSS is:(.awesome) talk",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8080"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "Martine Dowden",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

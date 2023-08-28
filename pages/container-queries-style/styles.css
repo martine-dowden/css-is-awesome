@@ -1,0 +1,98 @@
+@container style(--status: done) {
+  .card {
+    background: #d0e9d4;
+    border-color: #94ba9a;
+  }
+  .card::after {
+    content: '\e876';
+    color: #94ba9a;
+    border-color: #94ba9a;
+  }
+}
+
+@container style(--status: progress) {
+  .card {
+    background: #e6f1ff;
+    border-color: #628dc4;
+  }
+  .card::after {
+    content: '\e8b8';
+    color: #628dc4;
+    border-color: #628dc4;
+  }
+}
+
+@container style(--status: waiting) {
+  .card {
+    background: #fff3d9;
+    border-color: #ffba26;
+  }
+  .card::after {
+    content: '\e88b';
+    color: #ffba26;
+    border-color: #ffba26;
+  }
+}
+
+/* other styles */
+
+.container {
+  display: flex;
+  gap: 40px 40px ;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 55px auto;
+}
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+dt::after {
+  content: ': '
+}
+
+.card {
+  border-radius: 4px;
+  border: solid 1px;
+  padding: 1rem;
+  position: relative;
+}
+.card::after {
+  border: solid 1px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  outline: solid 2px white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background: white;
+}
+
+h3 { margin-top: 0; }
+
+.colors {
+  color: #628dc4;
+}

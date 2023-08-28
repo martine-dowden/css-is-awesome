@@ -1,0 +1,16 @@
+p {
+  line-height: 1.75;
+}
+
+p:first-of-type::first-letter {
+  initial-letter: 3;
+  margin-right: 1ch;
+  color: rgb(58, 148, 196);
+}
+
+p:nth-of-type(2)::first-letter {
+  initial-letter: 3 2;
+  margin-right: 1ch;
+  color: rgb(58, 148, 196);
+}
+

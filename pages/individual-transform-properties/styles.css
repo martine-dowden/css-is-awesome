@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section {
+  height: 100px;
+  width: 100px;
+  border: solid 1px gray;
+  border-radius: 4px;
+  background: #ddddfb;
+}
+
+/* section:first-of-type { transform: rotate(25deg); }
+section:nth-of-type(2) { transform: translate(0px 125px); }
+section:nth-of-type(3) { transform: scale(.5); } */
+
+section:first-of-type { rotate: 25deg; }
+section:nth-of-type(2) { translate: 0px 125px; }
+section:nth-of-type(3) { scale: .5; }
+
+

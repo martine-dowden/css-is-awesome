@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100vh;
+}
+
+main {
+  background: gray;
+  padding: 10px;
+  border: solid 1px gray;
+  border-radius: 4px;
+  min-height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 10px;
+}
+
+p {
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px rgb(55, 141, 169);
+  scroll-snap-align: start;
+  background: white;
+}

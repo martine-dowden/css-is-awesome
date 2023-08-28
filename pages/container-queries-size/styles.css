@@ -1,0 +1,40 @@
+
+.tags { container-type: inline-size }
+
+.tags ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+  background: #ffe4f9;
+  padding: 5px 15px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+}
+
+@container (min-width: 350px) {
+  .tags ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Other Styles */
+
+img {
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+
+aside { text-align: center; }
+
+.container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  gap: 1rem;
+}
+
+p { line-height: 1.5 }

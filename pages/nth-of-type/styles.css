@@ -1,0 +1,4 @@
+li:nth-child(2 of .active) {
+  font-weight: bold;
+  color: red;
+}
